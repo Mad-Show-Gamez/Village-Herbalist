@@ -1,0 +1,9 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Recipe : ScriptableObject
+{
+    AlchemyItem output;
+    AlchemyItem[] input;
+}
