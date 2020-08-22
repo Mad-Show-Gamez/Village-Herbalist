@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Tag : ScriptableObject
 {
-
     private string _tagName;
     public string tagName
     {
