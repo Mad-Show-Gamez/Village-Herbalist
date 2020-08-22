@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq
 
 [CreateAssetMenu(fileName = "New AlchemyItem", menuName = "Alchemy Item")]
 public class AlchemyItem : ScriptableObject
@@ -18,6 +17,10 @@ public class AlchemyItem : ScriptableObject
         }
     }
     public string slug { get => itemName.Replace(' ','_'); }
+    [SerializeField]
     string description;
+    [SerializeField]
+    Color color= Color.white;
+    [SerializeField]
     Tag[] tags;
 }
