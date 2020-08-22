@@ -6,10 +6,14 @@ using UnityEngine.Events;
 public class onClick : MonoBehaviour
 {
     [SerializeField]
+    TransformEvent clickHandler;
+    [SerializeField]
     TransformEvent clickReleaseHandler;
     public void ClickRelease(Transform self) => clickReleaseHandler.Invoke(self);
 
-    [SerializeField]
-    TransformEvent clickHandler;
     public void Click(Transform self) => clickHandler.Invoke(self);
+    public void clearParent()
+    {
+        transform.parent = null;
+    }
 }
