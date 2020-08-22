@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ContainerCollect : MonoBehaviour, IColorProvider
+public class ContainerInterraction : MonoBehaviour, IColorProvider
 {
     [SerializeField]
     int capacity = 1;
@@ -17,9 +17,18 @@ public class ContainerCollect : MonoBehaviour, IColorProvider
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var tool = collision.GetComponent<IAlchemyTool>();
-        if (tool!=null)
+        if (tool != null)
         {
-            if (tool.items.Count() <= capacity)
+            if (content.Any())
+            {
+                foreach (var item in content)
+                {
+                    tool.add(item);
+                }
+                currentColor = new Color(0, 0, 0, 0);
+                content = new AlchemyItem[0];
+            }
+            else if (tool.items.Count() <= capacity)
             {
                 content = tool.Empty().ToArray();
                 currentColor = content.Select(i => i.Color).avrageColor();
@@ -29,6 +38,6 @@ public class ContainerCollect : MonoBehaviour, IColorProvider
     private void OnValidate()
     {
 
-        currentColor = content.Where(i=>i!=null).Select(i => i.Color).avrageColor();
+        currentColor = content.Where(i => i != null).Select(i => i.Color).avrageColor();
     }
 }
