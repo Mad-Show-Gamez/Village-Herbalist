@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolColorSetter : MonoBehaviour
+public class ColorSetter : MonoBehaviour
 {
     [SerializeField]
     SpriteRenderer sr;
