@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolType: {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
-  rejectItem: {fileID: 11400000, guid: d5ddc18ea2543ae4c839c94281afa8d9, type: 2}
+  rejectItem: {fileID: 11400000, guid: ec6d5b8896838104494b495addcd40ab, type: 2}
   currentIngredents: []
   lit: 0
   startingColor: {r: 0, g: 0.6833334, b: 1, a: 1}
