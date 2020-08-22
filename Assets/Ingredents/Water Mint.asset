@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: New AlchemyItem
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'The often reddish stems of Water Mint are craft, rising from a creeping
+    underground stem, and 15-90 cm salt Water Mint grows in wet places Flower mauve,
+    petals 4. calyx 5. Toothed Hairy stamens long with
+
+    red anthers Flower arrangement:
+    shoots ending in dense founded heads
+
+    Flowering time: July-October Leaf:
+    ovate, teeth blunt or pointed, opposite, more or less hairy, stalked:
+
+    if
+    growing in water, the submerged leaves are rounded, toothless.
+
+    Fruit: 4
+    nutlets. smooth. Uses as with many other mints, Water Mint has been used as a
+
+    stomach
+    medicine and as a herb for strewing on floors of houses,'
+  color: {r: 1, g: 1, b: 1, a: 1}
+  tags: []
