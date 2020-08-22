@@ -12,8 +12,8 @@ public class DebugCrafting : MonoBehaviour
         {
             if (inputItems.Count > 0)
             {
-                AlchemyItem newItem = Crafting.Craft(inputItems);
-                Debug.Log(newItem.name);
+                AlchemyItem newItem = Recipe.Craft(inputItems);
+                Debug.Log(newItem.itemName);
             }
             else Debug.Log("No input items");
         }
