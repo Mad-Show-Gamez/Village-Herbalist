@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class Cauldren : MonoBehaviour, IAlchemyTool
@@ -15,8 +16,6 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
     List<AlchemyItem> currentIngredents;
     [NaughtyAttributes.ReadOnly]
     public bool lit;
-    [SerializeField]
-    Color startingColor = Color.blue;
     [NaughtyAttributes.ReadOnly]
     Color currentColor;
     [SerializeField]
@@ -27,7 +26,7 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
     float cooktime;
     private void Awake()
     {
-        currentColor = startingColor;
+        currentColor = toolType.Color;
     }
     public AlchemyItem ToolType => toolType;
 
@@ -59,7 +58,7 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
         {
             var rval = currentIngredents.ToArray();
             currentIngredents.Clear();
-            currentColor = startingColor;
+            currentColor = toolType.Color;
             return rval;
         }
         return new AlchemyItem[0];
