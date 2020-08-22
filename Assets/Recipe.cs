@@ -18,7 +18,7 @@ public class Recipe : ScriptableObject
         all.Add(this);
     }
 
-    public static AlchemyItem Craft(IEnumerable<AlchemyItem> inputItems, AlchemyItem RejectItem)
+    public static AlchemyItem Craft(IEnumerable<AlchemyItem> inputItems, AlchemyItem RejectItem=null)
     {
         var satisfy = all.Where(r =>
             r.input.Length == inputItems.Count() &&
