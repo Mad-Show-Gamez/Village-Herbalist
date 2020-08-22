@@ -18,22 +18,14 @@ public class Recipe : ScriptableObject
         all.Add(this);
     }
 
-    public static AlchemyItem Craft(List<AlchemyItem> inputItems)
+    public static AlchemyItem Craft(IEnumerable<AlchemyItem> inputItems, AlchemyItem RejectItem)
     {
-        AlchemyItem outputItem = null;
+        var satisfy = all.Where(r =>
+            r.input.Length == inputItems.Count() &&
+            r.input.Intersect(inputItems).Count() == r.input.Count()
+            );
+        int count = satisfy.Count();
+        return count > 0 ? satisfy.ElementAt(Random.Range(0, count)).output : RejectItem;
 
-        foreach (Recipe recipe in all)
-        {
-            if (recipe.input.Length == inputItems.Count)
-            {
-                if (recipe.input.Intersect(inputItems).Count() == recipe.input.Count())
-                {
-                    return recipe.output;
-                }
-            }
-
-        }
-
-        return outputItem;
     }
 }
