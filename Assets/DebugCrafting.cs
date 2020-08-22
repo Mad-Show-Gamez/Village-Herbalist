@@ -5,6 +5,7 @@ using UnityEngine;
 public class DebugCrafting : MonoBehaviour
 {
     [SerializeField] List<AlchemyItem> inputItems;
+    [SerializeField] Customer customer;
 
     void Update()
     {
@@ -13,7 +14,8 @@ public class DebugCrafting : MonoBehaviour
             if (inputItems.Count > 0)
             {
                 AlchemyItem newItem = Recipe.Craft(inputItems);
-                Debug.Log(newItem.itemName);
+                customer.ReceiveItem(newItem);
+                customer = null;
             }
             else Debug.Log("No input items");
         }
