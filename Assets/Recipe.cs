@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Recipe : ScriptableObject
 {
-    public static List<Recipe> all = new List<Recipe>();
+    public static HashSet<Recipe> all = new HashSet<Recipe>();
     AlchemyItem output;
     AlchemyItem[] input;
     public void OnDisable()
