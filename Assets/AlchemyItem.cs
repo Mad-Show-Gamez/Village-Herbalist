@@ -11,6 +11,13 @@ public class AlchemyItem : ScriptableObject
     [SerializeField]
     Sprite sprite;
     string _itemName;
+    [SerializeField]
+    [NaughtyAttributes.ResizableTextArea]
+    string description;
+    [SerializeField]
+    Color color = Color.white;
+    [SerializeField]
+    Tag[] tags;
     public string itemName
     {
         get
@@ -21,13 +28,10 @@ public class AlchemyItem : ScriptableObject
         }
     }
     public string slug { get => itemName.Replace(' ', '_'); }
-    [SerializeField]
-    [NaughtyAttributes.ResizableTextArea]
-    string description;
-    [SerializeField]
-    Color color = Color.white;
-    [SerializeField]
-    Tag[] tags;
+    public Sprite Sprite { get => sprite; private set => sprite = value; }
+    public string Description { get => description; private set => description = value; }
+    public Color Color { get => color; private set => color = value; }
+    public IEnumerable<Tag> Tags { get => tags; private set => tags = value.ToArray(); }
   
 
     [MenuItem("Assets/Create/Alchemy Item/Plant/Leaf")]
