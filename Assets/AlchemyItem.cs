@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New AlchemyItem", menuName = "Alchemy Item")]
 public class AlchemyItem : ScriptableObject
 {
     Sprite sprite;
