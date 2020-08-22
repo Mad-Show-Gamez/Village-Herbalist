@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using UnityEngine;
-
+[CreateAssetMenu]
 public class Tag : ScriptableObject
 {
     private string _tagName;
