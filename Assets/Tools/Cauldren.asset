@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Cauldren
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 64d8635ba0359274e8c514afb0f0b296, type: 3}
+  description: used for boiling ingredents down
+  color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+  tags:
+  - {fileID: 11400000, guid: 67a27127ae49d4942a7efad286ea6529, type: 2}
