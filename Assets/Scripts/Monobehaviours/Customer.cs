@@ -5,25 +5,18 @@ using System.Linq;
 
 public class Customer : MonoBehaviour
 {
-    AlchemyItem requestItem;
+    [SerializeField] CustomerRequest requestItem;
 
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        int randomItemIndex = Random.Range(0, Recipe.all.Count);
-        requestItem = Recipe.all.ElementAt(randomItemIndex).output;
-        Debug.Log(requestItem.itemName);
-    }
-
-    public void ReceiveItem(AlchemyItem receivedItem)
-    {
-        if (requestItem == receivedItem)
+        if (collision.GetComponent<ContainerInterraction>() != null)
         {
-            Debug.Log("Received item matched request item");
-            Destroy(this);
-        }
-        else
-        {
-            Debug.Log("Wrong item was given");
+            ContainerInterraction container = collision.GetComponent<ContainerInterraction>();
+            if (container.content.Any() == requestItem)
+            {
+                Debug.Log("Requested item matches");
+                container.emptycontainer();
+            }
         }
     }
 }
