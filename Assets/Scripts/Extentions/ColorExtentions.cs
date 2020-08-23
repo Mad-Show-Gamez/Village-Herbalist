@@ -47,7 +47,7 @@ namespace Extensions
         public static Color avrageColor(this IEnumerable<Color> c)
         {
             var count = c.Count();
-            if (count < 1)
+            if (c== null || count < 1)
                 return new Color(0, 0, 0, 0);
             return (c.Select(i => i.ColorToHSV()).Aggregate((c1, c2) => c1 + c2) * (1f / count)).ToColorHSV();
         }
