@@ -25,8 +25,7 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
                 {
                     tool.add(item);
                 }
-                currentColor = new Color(0, 0, 0, 0);
-                content = new AlchemyItem[0];
+                emptycontainer();
             }
             else if (tool.items.Count() <= capacity)
             {
@@ -35,6 +34,13 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
             }
         }
     }
+
+    private void emptycontainer()
+    {
+        currentColor = new Color(0, 0, 0, 0);
+        content = new AlchemyItem[0];
+    }
+
     private void OnValidate()
     {
 
