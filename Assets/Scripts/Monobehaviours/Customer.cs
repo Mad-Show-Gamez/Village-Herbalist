@@ -9,9 +9,10 @@ public class Customer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<ContainerInterraction>() != null)
+        ContainerInterraction container = collision.GetComponent<ContainerInterraction>();
+
+        if (container != null)
         {
-            ContainerInterraction container = collision.GetComponent<ContainerInterraction>();
             if (container.content.Any() == requestItem)
             {
                 Debug.Log("Requested item matches");
