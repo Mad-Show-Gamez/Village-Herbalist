@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5854d47dd6674498112c762fbe9b6, type: 3}
+  m_Name: Knife_Lizard_OrchidToLizard Orchid_Fruit
+  m_EditorClassIdentifier: 
+  output: {fileID: 11400000, guid: 53f510c2cdee7bd45b80800463a27e5a, type: 2}
+  input:
+  - {fileID: 11400000, guid: 3ea7057e2bd22634084d944d75bdc86d, type: 2}
+  - {fileID: 11400000, guid: e96488dbb1793b04595f6bb527482b8f, type: 2}

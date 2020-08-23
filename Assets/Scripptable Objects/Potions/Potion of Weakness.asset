@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
-  m_Name: Cauldren
+  m_Name: Potion of Weakness
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 64d8635ba0359274e8c514afb0f0b296, type: 3}
-  description: used for boiling ingredents down
-  color: {r: 0.03604484, g: 0.7697063, b: 0.8490566, a: 1}
-  tags:
-  - {fileID: 11400000, guid: 67a27127ae49d4942a7efad286ea6529, type: 2}
+  sprite: {fileID: 0}
+  description: 
+  color: {r: 1, g: 1, b: 1, a: 1}
+  tags: []

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Papaver rhoeas_Leaf
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'The Common Poppy, with its largo, scarlet flowers and covering of
+    stiff hairs, grows 25-90 cm high it cut it exudes milky-white latex Like the
+    previous species, it is an annual and a very common
+
+    field margins plant
+    of roadsides and Flower: scarlet, often with dark blotch at petal-base: 7-10
+    cm across petals thin; stamens many stigma disc more or less flat with 8-12 radiating
+    ridges.
+
+    Flower arrangement: solitary
+
+    Flowering time: June-August. Leaf:
+    stiffly hairy, 1- to 2-pinnate
+
+    segments coarsely toothed.
+
+    Fruit: capsule,
+    rounded at base, top flat, length 1-2 cm, hairless, opening
+
+    by pores under
+    top.
+
+    Uses: Poppies were thought to cause headaches and thunderstorms, but
+
+    were
+    also used to treat headaches Although slightly poisonous, the red poppy does
+    not contain the opium of the Opium Poppy (P. somniferum)'
+  color: {r: 0.06666667, g: 0.2784314, b: 0.47058824, a: 1}
+  tags: []

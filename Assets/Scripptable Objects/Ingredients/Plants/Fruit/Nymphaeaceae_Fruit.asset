@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Nymphaeaceae_Fruit
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'Water-lilies grow in still or slow moving fresh water, with their
+    roots and stout rhizomes in the mud. Leaves and flowers grow up on long stalks,
+    most leaves floating on the surface and often
+
+    covering large areas. The
+    flowers may float or stand clear of the water. Like the buttercups, the water-lilies
+    have flowers with
+
+    many stamens and no specialized pollination mechanisms.'
+  color: {r: 0.827451, g: 1, b: 0.99215686, a: 1}
+  tags: []

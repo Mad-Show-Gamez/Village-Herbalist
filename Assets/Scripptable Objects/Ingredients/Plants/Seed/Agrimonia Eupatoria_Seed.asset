@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Agrimonia Eupatoria_Seed
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'This is an erect plant, 30-60 cm high, with a slender spike of yellow
+    flowers above and densely leafy below. The reddish stems have long hairs, and
+    the plant favours dry roadsides and field edges.
+
+    Flower: yellow, 5-8 mm
+    across; petals 5; sepals 5, hairy: ring of hooked bristles immediately below:
+
+    stamens
+    many. Flower arrangement: slender
+
+    spike.
+
+    Flowering time: June-August.
+    Leaf: pinnate, with 3-6 pairs of toothed, elliptic leaflets, 2-6 cm long; hairy,
+    greyish beneath, not glandular, smaller leaflets between; stipules leaf-like.
+
+    Fruit:
+    grooved; top covered with hooked bristles which point forward, dispersed by catching
+    onto clothing, or fur of passing animals.'
+  color: {r: 0.90800005, g: 0.8950153, b: 0.670104, a: 1}
+  tags: []

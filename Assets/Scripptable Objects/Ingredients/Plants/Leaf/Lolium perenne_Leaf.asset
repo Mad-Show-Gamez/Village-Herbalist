@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Lolium perenne_Leaf
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'This very nutritious, but rather tough grass is extensively sown
+    for pasture and for lawns, where its wiry flower stems often defeat the mower.
+    It reaches about 1 m when not cut or young. Basal sheaths often pink. Ligule
+    ring-like, to 2 mm high.
+
+    grazed. There are many varieties. Leaf: bright
+    green and hairless, to 20 cm long; folded along mid-rib when
+
+    Spikelet: stalkless,
+    oval and flat, with only 1 glume and up to 14 flowers Placed alternately on opposite
+    sides of a slender spike, with narrow edge facing the stem'
+  color: {r: 0.5254902, g: 0.7176471, b: 0.6156863, a: 1}
+  tags: []

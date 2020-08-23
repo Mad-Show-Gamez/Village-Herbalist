@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Knotgrass
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: 'Knotgrass is a ragged-looking annual. erect (up to 2 m high) or straggling
+    in mats on trampled ground and at the coast. The plant is hairless and branched,
+    and the ochre are ragged and silvery Flower: pink or white; petal-like
+
+    lobes
+    5. Flower arrangement: 1-6 flowers
+
+    in the leaf-axils.
+
+    Flowering time:
+    July-October Leaf: elliptic to very narrow, tips more or less pointed, almost
+    stalkless leaves on main stem larger than branch leaves, ochre silvery, torn.
+    Fruit: nut, 3-angled, hidden by dead flower.'
+  color: {r: 0.9372549, g: 0.9372549, b: 0.9372549, a: 1}
+  tags: []

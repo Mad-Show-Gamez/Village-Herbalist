@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
+  m_Name: Monkshood_Flower
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  description: "Extremely poisonous, monkshood or woulf's bane, as it i also known.
+    \nis a herbaceous perennial that s the new to the mountainous parts of the northern
+    hemisphere\nTo demonstrate the darker arts, monkshood in highly toxic As with
+    many herbs, there is a great deal in the name monkshood because the tall stem
+    bears flowers whose sepals are in the form of a cylindrical helmet, looking not
+    unlike a monk's cowl.\nand wolf's bane because the toxins were once extracted
+    from the plant and used to kill wolves.\nThe herb has long been associated with
+    big dogs, and the classical writer Ovid has it in the davering mouth of three-headed
+    Cerberus, guard dog to the gates of hell Aconitum is Greek for dart, because
+    the juice was used to poison arrow tips. Napellus, or little turnip', is a reference
+    to the shape of its roots\nIn her Modern Herbal (1931). Mrs Grieve goes to great
+    pains to describe the considerable agonies of being poisoned with monkshood:
+    'tingling and numbness of tongue and mouth and a sensation of ants crawling over
+    the body, nausea and vomiting with epigastric pain, laboured breathing, pulse
+    irregular and weak, skin cold and clammy, features bloodless, giddiness, staggering,
+    mind remains clear' No joking around, then: monkshood is a herb to avoid. It
+    can be used as an ingredient to soothe the pains of neuralgia, sciatica, arthritis,
+    gout, measles and chronic skin problems, but it is definitely one to leave to
+    the professional herbalists"
+  color: {r: 0.4081404, g: 0, b: 0.6698113, a: 1}
+  tags: []
