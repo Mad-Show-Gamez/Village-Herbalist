@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Potion of Midas
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  description: 
+  description: a creature that drinks this turns to solid gold.
   color: {r: 1, g: 1, b: 1, a: 1}
   tags: []
+  value: 0

@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
-  m_Name: The Draft of the dancing fool
+  m_Name: The Draft of the Dancing Fool
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  description: 
+  description: The drinker will dance until they fall unconscious. they will resist
+    all attempts to make them do so.
   color: {r: 1, g: 1, b: 1, a: 1}
   tags: []
+  value: 0
