@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Monkshood
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b24c75ec03a0be24ab9fcce3d5bb12cd, type: 3}
   description: "Extremely poisonous, monkshood or woulf's bane, as it i also known.
     \nis a herbaceous perennial that s the new to the mountainous parts of the northern
     hemisphere\nTo demonstrate the darker arts, monkshood in highly toxic As with
@@ -34,3 +34,4 @@ MonoBehaviour:
     the professional herbalists"
   color: {r: 0.4081404, g: 0, b: 0.6698113, a: 1}
   tags: []
+  value: 0

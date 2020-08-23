@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Borage
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 06cf7c07ff8b81348b7546e2c17122d9, type: 3}
   description: 'said by early herbalists to foster cheerfulness and courage.
 
     The
@@ -45,3 +45,4 @@ MonoBehaviour:
     as a vegetable.'
   color: {r: 0.34109113, g: 0.6886792, b: 0.46635416, a: 1}
   tags: []
+  value: 0

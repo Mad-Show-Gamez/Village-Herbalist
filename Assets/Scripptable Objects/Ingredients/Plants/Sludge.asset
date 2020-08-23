@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Sludge
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: fc1944819f092b24d88a059269bd0725, type: 3}
   description: well thats not much of anything
   color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
   tags: []
+  value: 0

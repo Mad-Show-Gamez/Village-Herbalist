@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Lizard Orchid
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: e65d41ab883600242a8339b450667aa7, type: 3}
   description: "Named for the long, ribbon-like lip, this is one of Europe's largest
     orchids, occasionally reaching 1m. It grows mainly on dry, calcareous grassland:
     very rare in Britain, but locally common in southern and central Europe. \r\nFlower:
@@ -23,3 +23,4 @@ MonoBehaviour:
     as flower stem grows. Upper leaves sheathe stem. Fruit: a many-seeded capsule."
   color: {r: 0.57254905, g: 0.5764706, b: 0.4745098, a: 1}
   tags: []
+  value: 0

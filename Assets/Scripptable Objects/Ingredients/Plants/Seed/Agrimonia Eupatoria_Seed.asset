@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Agrimonia Eupatoria_Seed
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 8f84490b25def2348abe13a3106414d1, type: 3}
   description: 'This is an erect plant, 30-60 cm high, with a slender spike of yellow
     flowers above and densely leafy below. The reddish stems have long hairs, and
     the plant favours dry roadsides and field edges.
@@ -34,3 +34,4 @@ MonoBehaviour:
     onto clothing, or fur of passing animals.'
   color: {r: 0.90800005, g: 0.8950153, b: 0.670104, a: 1}
   tags: []
+  value: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Water Mint_Seed
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 9692f3a94f5883b4fbd7fe8f9c9556f3, type: 3}
   description: 'The often reddish stems of Water Mint are craft, rising from a creeping
     underground stem, and 15-90 cm salt Water Mint grows in wet places Flower mauve,
     petals 4. calyx 5. Toothed Hairy stamens long with

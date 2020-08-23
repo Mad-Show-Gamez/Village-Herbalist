@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Nymphaeaceae
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5927a7ff756496146bcf2daf08defd28, type: 3}
   description: 'Water-lilies grow in still or slow moving fresh water, with their
     roots and stout rhizomes in the mud. Leaves and flowers grow up on long stalks,
     most leaves floating on the surface and often
@@ -24,3 +24,4 @@ MonoBehaviour:
     many stamens and no specialized pollination mechanisms.'
   color: {r: 0.827451, g: 1, b: 0.99215686, a: 1}
   tags: []
+  value: 0

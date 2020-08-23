@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Lolium perenne_Seed
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 39d383af2f404964293e79e226c3560d, type: 3}
   description: 'This very nutritious, but rather tough grass is extensively sown
     for pasture and for lawns, where its wiry flower stems often defeat the mower.
     It reaches about 1 m when not cut or young. Basal sheaths often pink. Ligule
@@ -26,3 +26,4 @@ MonoBehaviour:
     sides of a slender spike, with narrow edge facing the stem'
   color: {r: 0.5254902, g: 0.7176471, b: 0.6156863, a: 1}
   tags: []
+  value: 0
