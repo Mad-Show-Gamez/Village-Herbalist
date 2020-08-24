@@ -24,6 +24,6 @@ MonoBehaviour:
     Spikelet: stalkless,
     oval and flat, with only 1 glume and up to 14 flowers Placed alternately on opposite
     sides of a slender spike, with narrow edge facing the stem'
-  color: {r: 0.5254902, g: 0.7176471, b: 0.6156863, a: 1}
+  color: {r: 0.59607846, g: 0.80392164, b: 0.59607846, a: 1}
   tags: []
   value: 0

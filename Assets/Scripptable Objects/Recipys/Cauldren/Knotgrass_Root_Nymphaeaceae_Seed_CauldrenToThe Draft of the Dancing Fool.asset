@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5854d47dd6674498112c762fbe9b6, type: 3}
+  m_Name: Knotgrass_Root_Nymphaeaceae_Seed_CauldrenToThe Draft of the Dancing Fool
+  m_EditorClassIdentifier: 
+  output: {fileID: 11400000, guid: 3390bc10894bbd645a8a79b95ead5e28, type: 2}
+  input:
+  - {fileID: 11400000, guid: 1a2a4df391aa65e43b6e046dd2b50a07, type: 2}
+  - {fileID: 11400000, guid: 9eca28db20e2be14295ebe52f5401b6f, type: 2}
+  - {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}

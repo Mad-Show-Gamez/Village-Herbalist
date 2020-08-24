@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Odontites verna_Root
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: c65ec7fe6b441fe4f978ec268688054e, type: 3}
+  sprite: {fileID: 21300000, guid: 896acb9f7e994cc4884adc522a0695b6, type: 3}
   description: "This is a semi-parasitic annual, much branched and downy. \nIt grows
     to 50 cm in grassland, on waste land and on the margins of cultivated fields
     It obtains water and minerals from the roots of grasses.\nFlower: purple-pink,
@@ -20,6 +20,6 @@ MonoBehaviour:
     leaf-like. Flower arrangement: in spikes, flowers pointing one way. \nFlowering
     time: June-August. Leaf: lanceolate, toothed, opposite, stalkless. Often tinged
     with maroon Fruit: capsule, seeds ridged."
-  color: {r: 0.8679245, g: 0.6018156, b: 0.6018156, a: 1}
+  color: {r: 0.6117647, g: 0.46274513, b: 0.09019608, a: 1}
   tags: []
   value: 0

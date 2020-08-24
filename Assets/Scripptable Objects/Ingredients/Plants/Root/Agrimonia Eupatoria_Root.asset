@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Agrimonia Eupatoria_Root
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2f60db661554b804cbafbd743961d2b3, type: 3}
+  sprite: {fileID: 21300000, guid: 2bc0b8226b019294096a5a657d11d425, type: 3}
   description: 'This is an erect plant, 30-60 cm high, with a slender spike of yellow
     flowers above and densely leafy below. The reddish stems have long hairs, and
     the plant favours dry roadsides and field edges.
@@ -32,6 +32,6 @@ MonoBehaviour:
     Fruit:
     grooved; top covered with hooked bristles which point forward, dispersed by catching
     onto clothing, or fur of passing animals.'
-  color: {r: 0.90800005, g: 0.8950153, b: 0.670104, a: 1}
+  color: {r: 0.5647059, g: 0.227451, b: 0, a: 1}
   tags: []
   value: 0

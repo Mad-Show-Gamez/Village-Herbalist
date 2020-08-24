@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5854d47dd6674498112c762fbe9b6, type: 3}
+  m_Name: Butterwort_Seed_Lizard_Orchid_Seed_Butterwort_Root_CauldrenToLove Potion
+  m_EditorClassIdentifier: 
+  output: {fileID: 11400000, guid: 0bd75938b03b749438f978098ab6821d, type: 2}
+  input:
+  - {fileID: 11400000, guid: 7ecafa7b73f63b948a6a4b1c3bb4c282, type: 2}
+  - {fileID: 11400000, guid: 8fae311d9097709408a994ce334f20ee, type: 2}
+  - {fileID: 11400000, guid: 5d459a022321d144fb1abc5c05389e8d, type: 2}
+  - {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}

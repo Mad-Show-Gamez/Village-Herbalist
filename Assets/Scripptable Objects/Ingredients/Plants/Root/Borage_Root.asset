@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Borage_Root
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 06cf7c07ff8b81348b7546e2c17122d9, type: 3}
+  sprite: {fileID: 21300000, guid: 2a270b9dd5db28f4588013081bba1bd5, type: 3}
   description: 'said by early herbalists to foster cheerfulness and courage.
 
     The
@@ -43,6 +43,6 @@ MonoBehaviour:
     of the Mediterranean, the leaves are cooked and eaten
 
     as a vegetable.'
-  color: {r: 0.34109113, g: 0.6886792, b: 0.46635416, a: 1}
+  color: {r: 0.9803922, g: 0.8313726, b: 0.7019608, a: 1}
   tags: []
   value: 0

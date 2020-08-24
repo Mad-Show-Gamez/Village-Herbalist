@@ -43,6 +43,6 @@ MonoBehaviour:
     of the Mediterranean, the leaves are cooked and eaten
 
     as a vegetable.'
-  color: {r: 0.34109113, g: 0.6886792, b: 0.46635416, a: 1}
+  color: {r: 0.5764706, g: 0.48627454, b: 0.39607847, a: 1}
   tags: []
   value: 0

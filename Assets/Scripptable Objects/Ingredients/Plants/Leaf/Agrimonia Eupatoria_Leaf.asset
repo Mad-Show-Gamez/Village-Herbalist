@@ -32,6 +32,6 @@ MonoBehaviour:
     Fruit:
     grooved; top covered with hooked bristles which point forward, dispersed by catching
     onto clothing, or fur of passing animals.'
-  color: {r: 0.90800005, g: 0.8950153, b: 0.670104, a: 1}
+  color: {r: 0.23529413, g: 0.45098042, b: 0.09019608, a: 1}
   tags: []
   value: 0

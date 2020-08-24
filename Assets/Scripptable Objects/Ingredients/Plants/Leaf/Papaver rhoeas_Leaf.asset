@@ -40,6 +40,6 @@ MonoBehaviour:
     were
     also used to treat headaches Although slightly poisonous, the red poppy does
     not contain the opium of the Opium Poppy (P. somniferum)'
-  color: {r: 0.06666667, g: 0.2784314, b: 0.47058824, a: 1}
+  color: {r: 0.36078432, g: 0.48627454, b: 0.17254902, a: 1}
   tags: []
   value: 0

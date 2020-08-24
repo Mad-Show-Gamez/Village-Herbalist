@@ -26,6 +26,6 @@ MonoBehaviour:
     July-October Leaf: elliptic to very narrow, tips more or less pointed, almost
     stalkless leaves on main stem larger than branch leaves, ochre silvery, torn.
     Fruit: nut, 3-angled, hidden by dead flower.'
-  color: {r: 0.9372549, g: 0.9372549, b: 0.9372549, a: 1}
+  color: {r: 1, g: 0.64705884, b: 0.2901961, a: 1}
   tags: []
   value: 0

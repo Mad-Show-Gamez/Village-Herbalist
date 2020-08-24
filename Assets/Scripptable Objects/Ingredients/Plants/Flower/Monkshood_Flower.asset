@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Monkshood_Flower
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 3afa63ddeb955884a9348a8920591e58, type: 3}
   description: "Extremely poisonous, monkshood or woulf's bane, as it i also known.
     \nis a herbaceous perennial that s the new to the mountainous parts of the northern
     hemisphere\nTo demonstrate the darker arts, monkshood in highly toxic As with
@@ -32,5 +32,6 @@ MonoBehaviour:
     can be used as an ingredient to soothe the pains of neuralgia, sciatica, arthritis,
     gout, measles and chronic skin problems, but it is definitely one to leave to
     the professional herbalists"
-  color: {r: 0.4081404, g: 0, b: 0.6698113, a: 1}
+  color: {r: 0.3529412, g: 0.31764707, b: 0.5254902, a: 1}
   tags: []
+  value: 0

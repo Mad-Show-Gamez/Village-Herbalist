@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826a27158b2431c4e8ad0aa19d08cde3, type: 3}
   m_Name: Papaver rhoeas_Flower
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0f52e4e44f228ac458efeb33164ac2a6, type: 3}
   description: 'The Common Poppy, with its largo, scarlet flowers and covering of
     stiff hairs, grows 25-90 cm high it cut it exudes milky-white latex Like the
     previous species, it is an annual and a very common
@@ -40,5 +40,6 @@ MonoBehaviour:
     were
     also used to treat headaches Although slightly poisonous, the red poppy does
     not contain the opium of the Opium Poppy (P. somniferum)'
-  color: {r: 0.06666667, g: 0.2784314, b: 0.47058824, a: 1}
+  color: {r: 0.64705884, g: 0.10196079, b: 0.03137255, a: 1}
   tags: []
+  value: 0

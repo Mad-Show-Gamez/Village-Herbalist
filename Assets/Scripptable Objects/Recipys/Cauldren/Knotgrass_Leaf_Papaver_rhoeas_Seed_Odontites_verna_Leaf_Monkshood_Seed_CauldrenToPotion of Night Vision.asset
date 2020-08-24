@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5854d47dd6674498112c762fbe9b6, type: 3}
+  m_Name: Knotgrass_Leaf_Papaver_rhoeas_Seed_Odontites_verna_Leaf_Monkshood_Seed_CauldrenToPotion
+    of Night Vision
+  m_EditorClassIdentifier: 
+  output: {fileID: 11400000, guid: 29fc93ab548d2e649842e92a27c7cf23, type: 2}
+  input:
+  - {fileID: 11400000, guid: 19a85165d9ae7324c91fc4747c396c28, type: 2}
+  - {fileID: 11400000, guid: 16c47c7835e486c4dbc1b098de982f54, type: 2}
+  - {fileID: 11400000, guid: 3be08529c7ff9ba4f8ea76328646f654, type: 2}
+  - {fileID: 11400000, guid: 5eaa9bf91d24df84e950dc1fc2c53797, type: 2}
+  - {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}

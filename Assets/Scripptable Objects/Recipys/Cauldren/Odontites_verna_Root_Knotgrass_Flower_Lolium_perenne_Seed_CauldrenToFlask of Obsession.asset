@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5854d47dd6674498112c762fbe9b6, type: 3}
+  m_Name: Odontites_verna_Root_Knotgrass_Flower_Lolium_perenne_Seed_CauldrenToFlask
+    of Obsession
+  m_EditorClassIdentifier: 
+  output: {fileID: 11400000, guid: 83addbbfa3bd2524c81413a41d38ed68, type: 2}
+  input:
+  - {fileID: 11400000, guid: b8716433c068c934bb0956d25288d43d, type: 2}
+  - {fileID: 11400000, guid: 5866e774234189043bda0263bb3bbf9a, type: 2}
+  - {fileID: 11400000, guid: 0d56055ad2ae84847a918d9b5eee52ed, type: 2}
+  - {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
