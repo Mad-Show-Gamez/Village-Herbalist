@@ -6,15 +6,22 @@ using System.Linq;
 
 public class Customer : MonoBehaviour
 {
-    [NaughtyAttributes.ReadOnly][SerializeField] internal CustomerRequest requestItem;
+    [NaughtyAttributes.ReadOnly] [SerializeField] List<AlchemyItem> requestedItems;
+    internal CustomerRequest customerRequest;
+    Text custText;
+    CustomerManager manager;
 
-    public void Initialize(CustomerRequest newRequest, GameObject canvas, GameObject CustomerText)
+    public void Initialize(CustomerManager manager, CustomerRequest newRequest, GameObject canvas, GameObject CustomerText)
     {
+        customerRequest = newRequest;
+        this.manager = manager;
         GameObject textField = Instantiate(CustomerText);
         textField.transform.SetParent(canvas.transform);
         Vector3 textOffset = new Vector3(0, 1, 0);
         textField.transform.position = Camera.main.WorldToScreenPoint(transform.position + textOffset);
-        textField.GetComponent<Text>().text = newRequest.description;
+        custText = textField.GetComponent<Text>();
+        custText.text = newRequest.description;
+        requestedItems.AddRange(newRequest.acceptedAI);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -23,14 +30,28 @@ public class Customer : MonoBehaviour
 
         if (container != null)
         {
-            if (container.content.Intersect(requestItem.acceptedAI).Any())
+            if (container.content.Select(i => i.type).Intersect(requestedItems).Any())
             {
-                container.emptycontainer();
-                if (requestItem.newRequests.Count != 0)
-                {
-                    CustomerManager.AvailableRequests.ToList().AddRange(requestItem.newRequests);
-                }
+                Debug.Log("yes");
+                CustomerSatisfied(container);
             }
         }
+    }
+
+    void CustomerSatisfied(ContainerInterraction container)
+    {
+        container.emptycontainer();
+        if (customerRequest.newRequests.Count != 0)
+        {
+            CustomerManager.AvailableRequests.ToList().AddRange(customerRequest.newRequests);
+            StartCoroutine(DestroyAfterDialogue());
+        }
+    }
+
+    IEnumerator DestroyAfterDialogue()
+    {
+        custText.text = "Thank you!";
+        yield return new WaitForSeconds(2);
+        manager.DestroyCustomer(this);
     }
 }
