@@ -2,23 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+[CreateAssetMenu(fileName = "Inventory", menuName = "Inventory")]
+public class Inventory : ScriptableObject
 {
-    public List<AlchemyItem> inventory;
-
-    void Start()
-    {
-        inventory = new List<AlchemyItem>();
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("Inventory Items: ");
-            for (int i = 0; i < inventory.Count; i++)
-                Debug.Log(inventory[i].itemName);
-            Debug.Log("-------------------");
-        }
-    }
+    public List<AlchemyItem> contents;
 }
