@@ -40,7 +40,7 @@ public class Recipe : ScriptableObject
         }
         return RejectItem;
     }
-    [MenuItem("Assets/Create/Alchemy Item/Recipies/Create From...")]
+    [MenuItem("Assets/Create/Alchemy Item/Recipies/Create From...", priority =0)]
     static void CreateRecipyFrom()
     {
         string path = EditorUtility.OpenFilePanel("Open Result", "Scripptable Objects/Potions", "asset");
