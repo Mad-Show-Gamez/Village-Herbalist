@@ -16,7 +16,7 @@ public class AlchemyItemMB : MonoBehaviour,IColorProvider
     {
         populateGO();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void TriggerInteract(Transform collision)
     {
         var tool = collision.GetComponent<IAlchemyTool>();
         if (tool != null)

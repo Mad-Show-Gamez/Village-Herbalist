@@ -12,8 +12,5 @@ public class onClick : MonoBehaviour
     public void ClickRelease(Transform self) => clickReleaseHandler.Invoke(self);
 
     public void Click(Transform self) => clickHandler.Invoke(self);
-    public void clearParent()
-    {
-        transform.parent = null;
-    }
+
 }
