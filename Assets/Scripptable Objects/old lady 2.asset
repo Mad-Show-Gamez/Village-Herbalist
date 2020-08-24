@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f064f32b6540550418eb4e565704e0e6, type: 3}
+  m_Name: old lady 2
+  m_EditorClassIdentifier: 
+  customerAvatar: {fileID: 21300000, guid: c0cd7249166e3f0409727a1bbd8f9222, type: 3}
+  CustomerName: Katie Hamilton
+  description: Hello again Dear, me again. it's been a tough weak, i could do with
+    another of your wonderful tonics.
+  acceptedAI:
+  - {fileID: 11400000, guid: 4204960e9a1dad0489c4435fbb3e381f, type: 2}
+  - {fileID: 11400000, guid: 2d369dadcb6413b4586c2bef98189aa5, type: 2}
+  - {fileID: 11400000, guid: 0af03e852d4f6d04f920ca1d2da76cc8, type: 2}
+  - {fileID: 11400000, guid: 300632a2341bb824d83325d9f4996d3b, type: 2}
+  - {fileID: 11400000, guid: b69531fb49821004c8d771eace2c7461, type: 2}
+  - {fileID: 11400000, guid: 3a6abf3eab3f6c04984471d54cfa9107, type: 2}
+  newRequests:
+  - {fileID: 11400000, guid: e8365a6715384624fb7966b128865e05, type: 2}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f064f32b6540550418eb4e565704e0e6, type: 3}
+  m_Name: old lady 1
+  m_EditorClassIdentifier: 
+  customerAvatar: {fileID: 21300000, guid: c0cd7249166e3f0409727a1bbd8f9222, type: 3}
+  CustomerName: Katie Hamilton
+  description: Hello Dear, Ive been having some trouble with my knees recently. im
+    not as spry as i used to be. would you have anything that could help?
+  acceptedAI:
+  - {fileID: 11400000, guid: 4204960e9a1dad0489c4435fbb3e381f, type: 2}
+  - {fileID: 11400000, guid: 2d369dadcb6413b4586c2bef98189aa5, type: 2}
+  - {fileID: 11400000, guid: 0af03e852d4f6d04f920ca1d2da76cc8, type: 2}
+  - {fileID: 11400000, guid: 300632a2341bb824d83325d9f4996d3b, type: 2}
+  - {fileID: 11400000, guid: 04a94e904dc0ca04ea8d364b56505ca5, type: 2}
+  - {fileID: 11400000, guid: 3a6abf3eab3f6c04984471d54cfa9107, type: 2}
+  newRequests:
+  - {fileID: 11400000, guid: 2b857e45dd829b34d9039029637a03ed, type: 2}
