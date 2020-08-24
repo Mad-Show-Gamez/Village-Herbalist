@@ -1,11 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class Customer : MonoBehaviour
 {
-    [SerializeField] CustomerRequest requestItem;
+    [NaughtyAttributes.ReadOnly][SerializeField] internal CustomerRequest requestItem;
+
+    public void Initialize(CustomerRequest newRequest, GameObject canvas, GameObject CustomerText)
+    {
+        GameObject textField = Instantiate(CustomerText);
+        textField.transform.SetParent(canvas.transform);
+        Vector3 textOffset = new Vector3(0, 1, 0);
+        textField.transform.position = Camera.main.WorldToScreenPoint(transform.position + textOffset);
+        textField.GetComponent<Text>().text = newRequest.description;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,10 +23,13 @@ public class Customer : MonoBehaviour
 
         if (container != null)
         {
-            if (container.content.Any() == requestItem)
+            if (container.content.Intersect(requestItem.acceptedAI).Any())
             {
-                Debug.Log("Requested item matches");
                 container.emptycontainer();
+                if (requestItem.newRequests.Count != 0)
+                {
+                    CustomerManager.AvailableRequests.ToList().AddRange(requestItem.newRequests);
+                }
             }
         }
     }
