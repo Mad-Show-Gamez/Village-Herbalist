@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
-    int DefaultSlotCount = 9;
+    int DefaultSlotCount = 12;
     [SerializeField] GameObject onClick;
     [SerializeField] GameObject GridLayoutGO;
     [SerializeField] GameObject ItemBox;
@@ -42,7 +42,6 @@ public class InventoryManager : MonoBehaviour
 
         for (int i = 0; i < DefaultSlotCount; i++)
         {
-            Debug.Log(i);
             GameObject newSlot = Instantiate(ItemBox, Vector3.zero, Quaternion.identity);
             newSlot.transform.SetParent(GridLayoutGO.transform);
             newSlot.transform.localScale = Vector3.one;
