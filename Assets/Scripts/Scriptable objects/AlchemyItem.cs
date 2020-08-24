@@ -49,7 +49,7 @@ public class AlchemyItem : ScriptableObject
     [MenuItem("Assets/Create/Alchemy Item/Plant/Fruit")]
     static void createSubFruit()
     {
-        createSubItem("Fruit");
+        createSubItem("Root");
     }
     [MenuItem("Assets/Create/Alchemy Item/Plant/Seed")]
     static void createSubSeed()
@@ -61,7 +61,7 @@ public class AlchemyItem : ScriptableObject
     {
         createSubItem("Leaf");
         createSubItem("Flower");
-        createSubItem("Fruit");
+        createSubItem("Root");
         createSubItem("Seed");
     }
     [MenuItem("Assets/Create/Alchemy Item/Animal/Heart")]
@@ -102,7 +102,12 @@ public class AlchemyItem : ScriptableObject
     [MenuItem("Assets/Create/Alchemy Item/Plant/All With Tool")]
     static void createSubAllPlantWithTool()
     {
-        createSubAllWithTool(new string[] { "Leaf", "Flower", "Fruit", "Seed" });
+        createSubAllWithTool(new string[] { "Leaf", "Flower", "Root", "Seed" });
+    }
+    [MenuItem("Assets/Create/Alchemy Item/Plant/Root With Tool")]
+    static void createSubAllRootWithTool()
+    {
+        createSubAllWithTool(new string[] {"Root" });
     }
     static void createSubAllWithTool(IEnumerable<string> types) { 
         string path = EditorUtility.OpenFilePanel("Open Tool", "Scripptable Objects/Tools", "asset");
