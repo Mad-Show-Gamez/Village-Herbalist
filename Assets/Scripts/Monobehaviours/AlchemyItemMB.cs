@@ -19,7 +19,7 @@ public class AlchemyItemMB : MonoBehaviour,IColorProvider
     public void TriggerInteract(Transform collision)
     {
         var tool = collision.GetComponent<IAlchemyTool>();
-        if (tool != null)
+        if (tool != null&& (tool.data.capacity<0 || tool.data.Count<tool.data.capacity))
         {
             tool.data.Add(item);
             Destroy(this.gameObject);

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1804037412950944832}
   - component: {fileID: 1804037412950944839}
   - component: {fileID: 3940838472217691}
+  - component: {fileID: 4437581826043333406}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
   clickReleaseHandler:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1804037412950944834}
+      - m_Target: {fileID: 4437581826043333406}
         m_MethodName: clearParent
         m_Mode: 1
         m_Arguments:
@@ -141,6 +142,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4437581826043333406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804037412950944838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a720b0d58797945a11a47cb00085fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1804037413460820370
 GameObject:
   m_ObjectHideFlags: 0

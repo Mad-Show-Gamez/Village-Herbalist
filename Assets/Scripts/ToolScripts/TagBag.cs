@@ -9,7 +9,7 @@ public class TagBag : ICollection<Tag>, IEnumerable<Tag>, IEnumerable, IReadOnly
 {
 
     [SerializeField]
-    private List<TagAmount> items;
+    private List<TagAmount> items = new List<TagAmount>();
 
     public int Count => ((ICollection<Tag>)items.Select(i => i.item)).Count;
 
@@ -83,7 +83,7 @@ public class TagBag : ICollection<Tag>, IEnumerable<Tag>, IEnumerable, IReadOnly
     {
         var exsisting = items.Find(i => i.item.Equals(item));
 
-        if (exsisting.Equals(default(Tag)))
+        if (exsisting == null)
         {
             return false;
         }
@@ -97,16 +97,16 @@ public class TagBag : ICollection<Tag>, IEnumerable<Tag>, IEnumerable, IReadOnly
     }
     public void SetCount(Tag item, int n)
     {
-        var existing = items.Find(i => i.item.Equals(item));
-        if (existing.Equals(default(Tag)))
+        var exsisting = items.Find(i => i.item.Equals(item));
+        if (exsisting == null)
         {
             items.Add(new TagAmount { item = item, count = n });
         }
         else
         {
             if (n <= 0)
-                items.Remove(existing);
-            existing.count = n;
+                items.Remove(exsisting);
+            exsisting.count = n;
         }
     }
 
@@ -129,7 +129,7 @@ public class TagBag : ICollection<Tag>, IEnumerable<Tag>, IEnumerable, IReadOnly
     public void UnionWith(IEnumerable<TagAmount> other)
     {
         foreach (var i in other)
-            Add(i.item,i.count);
+            Add(i.item, i.count);
     }
 
     bool ISet<Tag>.Add(Tag item)
@@ -138,25 +138,26 @@ public class TagBag : ICollection<Tag>, IEnumerable<Tag>, IEnumerable, IReadOnly
     }
     bool Add(Tag item, int n)
     {
+
         var exsisting = items.Find(i => i.item.Equals(item));
 
-        if (exsisting.Equals(default(Tag)))
+        if (exsisting==null)
         {
             items.Add(new TagAmount { item = item, count = 1 });
         }
         else
         {
-            exsisting.count+=n;
+            exsisting.count += n;
         }
         return true;
     }
 
     public int GetAmount(Tag item)
     {
-        var exsists = items.Find(i => i.item.Equals(item));
-        if (exsists.Equals(default(Tag)))
+        var exsisting = items.Find(i => i.item.Equals(item));
+        if (exsisting == null)
             return 0;
-        return exsists.count;
+        return exsisting.count;
     }
 
     IEnumerator IEnumerable.GetEnumerator()

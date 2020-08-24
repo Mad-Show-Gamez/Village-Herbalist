@@ -35,7 +35,7 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
         if (!lit && tool.Any())
         {
             StartCoroutine(LightCauldren());
-            StartCoroutine(LerpColorsOverTime(tool.CurrentColor, Resolve().Color, cooktime, c => tool.CurrentColor = c));
+            StartCoroutine(LerpColorsOverTime(tool.CurrentColor, Resolve().First().Color, cooktime, c => tool.CurrentColor = c));
         }
     }
     [NaughtyAttributes.Button("empty", NaughtyAttributes.EButtonEnableMode.Playmode)]
@@ -51,9 +51,10 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
         return new AlchemyItemInstance[0];
     }
 
-    public AlchemyItemInstance Resolve()
+    public IEnumerable<AlchemyItemInstance> Resolve()
     {
-        return Recipe.Craft(tool.Append(tool.ToolType), tool.rejectItem);
+        var items = Recipe.Craft(tool.Append(tool.ToolType), tool.rejectItem);
+        return new AlchemyItemInstance[] { items[UnityEngine.Random.Range(0, items.Length-1)] };
     }
 
     private IEnumerator LerpColorsOverTime(Color startingColor, Color endingColor, float time, Action<Color> cb)
@@ -74,7 +75,8 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
 
         var result = Resolve();
         tool.Clear();
-        tool.Add(result);
+        foreach (var r in result)
+            tool.Add(r);
 
         tool.OnCrafted.Invoke(transform);
     }

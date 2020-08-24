@@ -9,8 +9,15 @@ public class DelayAction : MonoBehaviour
     float wait;
     [SerializeField]
     TransformEvent onComplete;
+    [SerializeField]
+    bool RunOnAwake = false;
     [SerializeField, NaughtyAttributes.ReadOnly]
     bool running = false;
+    private void Awake()
+    {
+        if (RunOnAwake)
+            StartTask();
+    }
     public void StartTask()
     {
         if (!running)

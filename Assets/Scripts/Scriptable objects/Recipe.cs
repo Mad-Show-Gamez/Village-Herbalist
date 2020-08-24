@@ -7,10 +7,15 @@ using UnityEditor.Build.Content;
 [CreateAssetMenu(fileName = "new Recipe", menuName = "Recipe")]
 public class Recipe : ScriptableObject
 {
-    public static HashSet<Recipe> all = new HashSet<Recipe>();
+    private static HashSet<Recipe> _all = new HashSet<Recipe>();
+    public static HashSet<Recipe> all { get { _all.Remove(null); return _all; } }
     public AlchemyItem output;
     public AlchemyItem[] input;
     public void OnDisable()
+    {
+        all.Remove(this);
+    }
+    private void OnDestroy()
     {
         all.Remove(this);
     }
@@ -20,8 +25,11 @@ public class Recipe : ScriptableObject
         all.Add(this);
     }
 
-    public static AlchemyItemInstance Craft(IEnumerable<AlchemyItemInstance> inputItems, AlchemyItemInstance RejectItem)
+    public static AlchemyItemInstance[] Craft(IEnumerable<AlchemyItemInstance> inputItems, AlchemyItemInstance RejectItem)
     {
+
+        foreach (var s in all.Where(x => x.output == null).ToArray())
+            _all.Remove(s);
         var satisfy = all.Where(r =>
             r.input.Length == inputItems.Count() &&
             r.input.Intersect(inputItems.Select(i => i.type)).Count() == r.input.Count()
@@ -29,18 +37,21 @@ public class Recipe : ScriptableObject
         int count = satisfy.Count();
         if (count > 0)
         {
-            var toCraft = satisfy.ElementAt(Random.Range(0, count));
+            var complexity = satisfy.Max(i => i.input.Length);
+
             TagBag b = new TagBag();
             foreach (var input in inputItems)
             {
                 b.UnionWith(input.tags);
+                b.UnionWith(input.type.Tags);
             }
-            b.UnionWith(toCraft.output.Tags);
-            return new AlchemyItemInstance() { type = toCraft.output, tags = b };
+            foreach (var s in satisfy.Where(x => x.output == null))
+                Debug.LogError(s, s);
+            return satisfy.Where(i => i.input.Length == complexity).Select(i => new AlchemyItemInstance() { type = i.output, tags = b }).ToArray();
         }
-        return RejectItem;
+        return new AlchemyItemInstance[] { RejectItem };
     }
-    [MenuItem("Assets/Create/Alchemy Item/Recipies/Create From...", priority =0)]
+    [MenuItem("Assets/Create/Alchemy Item/Recipies/Create From...", priority = 0)]
     static void CreateRecipyFrom()
     {
         string path = EditorUtility.OpenFilePanel("Open Result", "Scripptable Objects/Potions", "asset");

@@ -17,6 +17,8 @@ public class AlchemyData : IEnumerable<AlchemyItemInstance>, ICollection<Alchemy
     public Color CurrentColor;
     [SerializeField]
     public AlchemyItemInstance rejectItem;
+    [SerializeField]
+    public int capacity = -1;
 
     public int Count => ((ICollection<AlchemyItemInstance>)_items).Count;
 

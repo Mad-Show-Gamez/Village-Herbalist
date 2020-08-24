@@ -3,7 +3,7 @@ using UnityEngine;
 
 public interface IAlchemyTool:IColorProvider
 {
-    AlchemyItemInstance Resolve();
+    IEnumerable<AlchemyItemInstance> Resolve();
     void Craft();
     IEnumerable<AlchemyItemInstance> Empty();
     AlchemyData data { get; }
