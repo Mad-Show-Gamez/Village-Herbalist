@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.Build.Content;
 
 [CreateAssetMenu(fileName = "new Recipe", menuName = "Recipe")]
 public class Recipe : ScriptableObject
@@ -19,15 +20,25 @@ public class Recipe : ScriptableObject
         all.Add(this);
     }
 
-    public static AlchemyItem Craft(IEnumerable<AlchemyItem> inputItems, AlchemyItem RejectItem = null)
+    public static AlchemyItemInstance Craft(IEnumerable<AlchemyItemInstance> inputItems, AlchemyItemInstance RejectItem)
     {
         var satisfy = all.Where(r =>
             r.input.Length == inputItems.Count() &&
-            r.input.Intersect(inputItems).Count() == r.input.Count()
+            r.input.Intersect(inputItems.Select(i => i.type)).Count() == r.input.Count()
             );
         int count = satisfy.Count();
-        return count > 0 ? satisfy.ElementAt(Random.Range(0, count)).output : RejectItem;
-
+        if (count > 0)
+        {
+            var toCraft = satisfy.ElementAt(Random.Range(0, count));
+            TagBag b = new TagBag();
+            foreach (var input in inputItems)
+            {
+                b.UnionWith(input.tags);
+            }
+            b.UnionWith(toCraft.output.Tags);
+            return new AlchemyItemInstance() { type = toCraft.output, tags = b };
+        }
+        return RejectItem;
     }
     [MenuItem("Assets/Create/Alchemy Item/Recipies/Create From...")]
     static void CreateRecipyFrom()

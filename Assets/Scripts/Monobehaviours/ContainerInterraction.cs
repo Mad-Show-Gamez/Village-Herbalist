@@ -9,7 +9,7 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
     [SerializeField]
     int capacity = 1;
     [SerializeField]
-    public AlchemyItem[] content;
+    public AlchemyItemInstance[] content;
     Color currentColor = new Color(0, 0, 0, 0);
 
     public Color CurrentColor => currentColor;
@@ -38,7 +38,7 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
     public  void emptycontainer()
     {
         currentColor = new Color(0, 0, 0, 0);
-        content = new AlchemyItem[0];
+        content = new AlchemyItemInstance[0];
     }
 
     private void OnValidate()

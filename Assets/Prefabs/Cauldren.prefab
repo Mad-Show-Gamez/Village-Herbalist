@@ -212,21 +212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tool:
     _items: []
-    ToolType: {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
-    OnCrafted:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8646920175762941504}
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+    ToolType:
+      type: {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
+      tags:
+        items: []
     OnStartCraft:
       m_PersistentCalls:
         m_Calls:
@@ -241,9 +230,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    OnCrafted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8646920175762941504}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     CurrentColor: {r: 1, g: 1, b: 1, a: 1}
-    rejectItem: {fileID: 11400000, guid: ec6d5b8896838104494b495addcd40ab, type: 2}
-  currentIngredents: []
+    rejectItem:
+      type: {fileID: 11400000, guid: ec6d5b8896838104494b495addcd40ab, type: 2}
+      tags:
+        items: []
   lit: 0
   cooktime: 5
 --- !u!114 &8646920177152643749

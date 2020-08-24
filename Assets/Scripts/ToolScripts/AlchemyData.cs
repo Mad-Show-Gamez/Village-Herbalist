@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [Serializable]
-public class AlchemyData : IEnumerable<AlchemyItem>, ICollection<AlchemyItem>, IEnumerable, IList<AlchemyItem>, IReadOnlyCollection<AlchemyItem>, IReadOnlyList<AlchemyItem>, ICollection, IList
+public class AlchemyData : IEnumerable<AlchemyItemInstance>, ICollection<AlchemyItemInstance>, IEnumerable, IList<AlchemyItemInstance>, IReadOnlyCollection<AlchemyItemInstance>, IReadOnlyList<AlchemyItemInstance>, ICollection, IList
 {
     [SerializeField]
-    List<AlchemyItem> _items = new List<AlchemyItem>();
+    List<AlchemyItemInstance> _items = new List<AlchemyItemInstance>();
     [SerializeField]
-    public AlchemyItem ToolType;
+    public AlchemyItemInstance ToolType;
     [SerializeField]
     public TransformEvent OnStartCraft;
     [SerializeField]
@@ -16,11 +16,11 @@ public class AlchemyData : IEnumerable<AlchemyItem>, ICollection<AlchemyItem>, I
     [SerializeField]
     public Color CurrentColor;
     [SerializeField]
-    public AlchemyItem rejectItem;
+    public AlchemyItemInstance rejectItem;
 
-    public int Count => ((ICollection<AlchemyItem>)_items).Count;
+    public int Count => ((ICollection<AlchemyItemInstance>)_items).Count;
 
-    public bool IsReadOnly => ((ICollection<AlchemyItem>)_items).IsReadOnly;
+    public bool IsReadOnly => ((ICollection<AlchemyItemInstance>)_items).IsReadOnly;
 
     public bool IsSynchronized => ((ICollection)_items).IsSynchronized;
 
@@ -28,38 +28,15 @@ public class AlchemyData : IEnumerable<AlchemyItem>, ICollection<AlchemyItem>, I
 
     public bool IsFixedSize => ((IList)_items).IsFixedSize;
 
+    AlchemyItemInstance IReadOnlyList<AlchemyItemInstance>.this[int index] => ((IReadOnlyList<AlchemyItemInstance>)_items)[index];
+
+    AlchemyItemInstance IList<AlchemyItemInstance>.this[int index] { get => ((IList<AlchemyItemInstance>)_items)[index]; set => ((IList<AlchemyItemInstance>)_items)[index] = value; }
     object IList.this[int index] { get => ((IList)_items)[index]; set => ((IList)_items)[index] = value; }
-    public AlchemyItem this[int index] { get => ((IList<AlchemyItem>)_items)[index]; set => ((IList<AlchemyItem>)_items)[index] = value; }
+    public AlchemyItemInstance this[int index] { get => ((IList<AlchemyItemInstance>)_items)[index]; set => ((IList<AlchemyItemInstance>)_items)[index] = value; }
 
-
-    public void Add(AlchemyItem item)
+    public IEnumerator<AlchemyItemInstance> GetEnumerator()
     {
-        ((ICollection<AlchemyItem>)_items).Add(item);
-    }
-
-    public void Clear()
-    {
-        ((ICollection<AlchemyItem>)_items).Clear();
-    }
-
-    public bool Contains(AlchemyItem item)
-    {
-        return ((ICollection<AlchemyItem>)_items).Contains(item);
-    }
-
-    public void CopyTo(AlchemyItem[] array, int arrayIndex)
-    {
-        ((ICollection<AlchemyItem>)_items).CopyTo(array, arrayIndex);
-    }
-
-    public IEnumerator<AlchemyItem> GetEnumerator()
-    {
-        return ((IEnumerable<AlchemyItem>)_items).GetEnumerator();
-    }
-
-    public bool Remove(AlchemyItem item)
-    {
-        return ((ICollection<AlchemyItem>)_items).Remove(item);
+        return ((IEnumerable<AlchemyItemInstance>)_items).GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -67,19 +44,44 @@ public class AlchemyData : IEnumerable<AlchemyItem>, ICollection<AlchemyItem>, I
         return ((IEnumerable)_items).GetEnumerator();
     }
 
-    public int IndexOf(AlchemyItem item)
+    public void Add(AlchemyItemInstance item)
     {
-        return ((IList<AlchemyItem>)_items).IndexOf(item);
+        ((ICollection<AlchemyItemInstance>)_items).Add(item);
     }
 
-    public void Insert(int index, AlchemyItem item)
+    public void Clear()
     {
-        ((IList<AlchemyItem>)_items).Insert(index, item);
+        ((ICollection<AlchemyItemInstance>)_items).Clear();
+    }
+
+    public bool Contains(AlchemyItemInstance item)
+    {
+        return ((ICollection<AlchemyItemInstance>)_items).Contains(item);
+    }
+
+    public void CopyTo(AlchemyItemInstance[] array, int arrayIndex)
+    {
+        ((ICollection<AlchemyItemInstance>)_items).CopyTo(array, arrayIndex);
+    }
+
+    public bool Remove(AlchemyItemInstance item)
+    {
+        return ((ICollection<AlchemyItemInstance>)_items).Remove(item);
+    }
+
+    public int IndexOf(AlchemyItemInstance item)
+    {
+        return ((IList<AlchemyItemInstance>)_items).IndexOf(item);
+    }
+
+    public void Insert(int index, AlchemyItemInstance item)
+    {
+        ((IList<AlchemyItemInstance>)_items).Insert(index, item);
     }
 
     public void RemoveAt(int index)
     {
-        ((IList<AlchemyItem>)_items).RemoveAt(index);
+        ((IList<AlchemyItemInstance>)_items).RemoveAt(index);
     }
 
     public void CopyTo(Array array, int index)

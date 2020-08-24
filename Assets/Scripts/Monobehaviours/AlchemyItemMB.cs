@@ -5,7 +5,7 @@ using UnityEngine;
 public class AlchemyItemMB : MonoBehaviour,IColorProvider
 {
     [SerializeField]
-    public AlchemyItem item;
+    public AlchemyItemInstance item;
     [SerializeField]
     SpriteRenderer sr;
 
@@ -32,11 +32,11 @@ public class AlchemyItemMB : MonoBehaviour,IColorProvider
     }
     private void populateGO()
     {
-        if (item != null)
+        if (item.type != null)
         {
-            if (sr != null && item.Sprite != null)
-                sr.sprite = item.Sprite;
-            name = "AI:" + item.slug;
+            if (sr != null && item.type.Sprite != null)
+                sr.sprite = item.type.Sprite;
+            name = "AI:" + item.type.slug;
         }
     }
 }

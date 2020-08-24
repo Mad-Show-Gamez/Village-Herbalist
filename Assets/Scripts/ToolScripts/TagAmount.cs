@@ -1,0 +1,1 @@
+﻿[System.Serializable] public class TagAmount:Amount<Tag>{}

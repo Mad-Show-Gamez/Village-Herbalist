@@ -39,7 +39,7 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
         }
     }
     [NaughtyAttributes.Button("empty", NaughtyAttributes.EButtonEnableMode.Playmode)]
-    public IEnumerable<AlchemyItem> Empty()
+    public IEnumerable<AlchemyItemInstance> Empty()
     {
         if (!lit)
         {
@@ -48,10 +48,10 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
             tool.CurrentColor = tool.ToolType.Color;
             return rval;
         }
-        return new AlchemyItem[0];
+        return new AlchemyItemInstance[0];
     }
 
-    public AlchemyItem Resolve()
+    public AlchemyItemInstance Resolve()
     {
         return Recipe.Craft(tool.Append(tool.ToolType), tool.rejectItem);
     }
