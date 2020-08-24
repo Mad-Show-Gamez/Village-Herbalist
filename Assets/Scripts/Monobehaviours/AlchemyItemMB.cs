@@ -30,7 +30,7 @@ public class AlchemyItemMB : MonoBehaviour,IColorProvider
     {
         populateGO();
     }
-    private void populateGO()
+    public void populateGO()
     {
         if (item.type != null)
         {
