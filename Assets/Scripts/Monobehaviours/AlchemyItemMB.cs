@@ -21,7 +21,7 @@ public class AlchemyItemMB : MonoBehaviour,IColorProvider
         var tool = collision.GetComponent<IAlchemyTool>();
         if (tool != null)
         {
-            tool.add(item);
+            tool.data.Add(item);
             Destroy(this.gameObject);
         }
     }

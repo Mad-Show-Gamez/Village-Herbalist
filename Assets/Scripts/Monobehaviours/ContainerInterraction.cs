@@ -9,7 +9,7 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
     [SerializeField]
     int capacity = 1;
     [SerializeField]
-    AlchemyItem[] content;
+    public AlchemyItem[] content;
     Color currentColor = new Color(0, 0, 0, 0);
 
     public Color CurrentColor => currentColor;
@@ -23,11 +23,11 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
             {
                 foreach (var item in content)
                 {
-                    tool.add(item);
+                    tool.data.Add(item);
                 }
                 emptycontainer();
             }
-            else if (tool.items.Count() <= capacity)
+            else if (tool.data.Count() <= capacity)
             {
                 content = tool.Empty().ToArray();
                 currentColor = content.Select(i => i.Color).avrageColor();
@@ -35,7 +35,7 @@ public class ContainerInterraction : MonoBehaviour, IColorProvider
         }
     }
 
-    private void emptycontainer()
+    public  void emptycontainer()
     {
         currentColor = new Color(0, 0, 0, 0);
         content = new AlchemyItem[0];

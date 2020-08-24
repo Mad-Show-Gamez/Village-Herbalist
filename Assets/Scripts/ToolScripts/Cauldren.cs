@@ -9,46 +9,33 @@ using UnityEngine;
 public class Cauldren : MonoBehaviour, IAlchemyTool
 {
     [SerializeField]
-    AlchemyItem toolType;
-    [SerializeField]
-    AlchemyItem rejectItem;
-    [SerializeField]
-    List<AlchemyItem> currentIngredents;
-    [NaughtyAttributes.ReadOnly]
-    public bool lit;
-    [NaughtyAttributes.ReadOnly]
-    Color currentColor;
-    [SerializeField]
-    TransformEvent onCrafted;
-    [SerializeField]
-    TransformEvent onLit;
+    AlchemyData tool;
+    [SerializeField, NaughtyAttributes.ReadOnly]
+    bool lit;
+    bool isLit { get => lit; }
+
+    public AlchemyData data => tool;
+
+    public Color CurrentColor => tool.CurrentColor;
+
     [SerializeField]
     float cooktime;
     private void Awake()
     {
-        currentColor = toolType.Color;
+        tool.CurrentColor = tool.ToolType.Color;
     }
-    public AlchemyItem ToolType => toolType;
-
-    public IEnumerable<AlchemyItem> items => currentIngredents;
-
-    public TransformEvent OnCrafted => onCrafted;
-
-    public TransformEvent OnStartCraft => onLit;
-
-    public Color CurrentColor => currentColor;
 
     public void add(AlchemyItem alchemyItem)
     {
-        currentIngredents.Add(alchemyItem);
+        tool.Add(alchemyItem);
     }
     [NaughtyAttributes.Button("light", NaughtyAttributes.EButtonEnableMode.Playmode)]
     public void Craft()
     {
-        if (!lit && currentIngredents.Any())
+        if (!lit && tool.Any())
         {
             StartCoroutine(LightCauldren());
-            StartCoroutine(LerpColorsOverTime(currentColor, Resolve().Color, cooktime, c => currentColor = c));
+            StartCoroutine(LerpColorsOverTime(tool.CurrentColor, Resolve().Color, cooktime, c => tool.CurrentColor = c));
         }
     }
     [NaughtyAttributes.Button("empty", NaughtyAttributes.EButtonEnableMode.Playmode)]
@@ -56,9 +43,9 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
     {
         if (!lit)
         {
-            var rval = currentIngredents.ToArray();
-            currentIngredents.Clear();
-            currentColor = toolType.Color;
+            var rval = tool.ToArray();
+            tool.Clear();
+            tool.CurrentColor = tool.ToolType.Color;
             return rval;
         }
         return new AlchemyItem[0];
@@ -66,7 +53,7 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
 
     public AlchemyItem Resolve()
     {
-        return Recipe.Craft(currentIngredents.Append(toolType), rejectItem);
+        return Recipe.Craft(tool.Append(tool.ToolType), tool.rejectItem);
     }
 
     private IEnumerator LerpColorsOverTime(Color startingColor, Color endingColor, float time, Action<Color> cb)
@@ -81,19 +68,19 @@ public class Cauldren : MonoBehaviour, IAlchemyTool
     IEnumerator LightCauldren()
     {
         lit = true;
-        onLit.Invoke(transform);
+        tool.OnStartCraft.Invoke(transform);
         yield return new WaitForSeconds(cooktime);
         lit = false;
 
         var result = Resolve();
-        currentIngredents.Clear();
-        currentIngredents.Add(result);
+        tool.Clear();
+        tool.Add(result);
 
-        onCrafted.Invoke(transform);
+        tool.OnCrafted.Invoke(transform);
     }
     private void Update()
     {
-        if (!lit && currentIngredents.Any())
-            currentColor = Color.Lerp(currentColor, currentIngredents.Select(i => i.Color).avrageColor(), Time.deltaTime);
+        if (!lit && tool.Any())
+            tool.CurrentColor = Color.Lerp(tool.CurrentColor, tool.Select(i => i.Color).avrageColor(), Time.deltaTime);
     }
 }

@@ -210,39 +210,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f67a25e9ae12a498a7525568eb10df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolType: {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
-  rejectItem: {fileID: 11400000, guid: ec6d5b8896838104494b495addcd40ab, type: 2}
+  tool:
+    _items: []
+    ToolType: {fileID: 11400000, guid: aa73e54f7db877043b73571556e84c7f, type: 2}
+    OnCrafted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8646920175762941504}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnStartCraft:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8646920175762941504}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    CurrentColor: {r: 1, g: 1, b: 1, a: 1}
+    rejectItem: {fileID: 11400000, guid: ec6d5b8896838104494b495addcd40ab, type: 2}
   currentIngredents: []
   lit: 0
-  startingColor: {r: 0, g: 0.6833334, b: 1, a: 1}
-  onCrafted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8646920175762941504}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onLit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8646920175762941504}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   cooktime: 5
 --- !u!114 &8646920177152643749
 MonoBehaviour:
