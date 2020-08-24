@@ -4823,7 +4823,7 @@ MonoBehaviour:
   ItemBox: {fileID: 7282753619381623722, guid: 0caeeb12e76a259418357b9d927e23d5, type: 3}
   AlchemyPrefab: {fileID: 3170109249869224126, guid: 83f648d8afefd6045b2c5ef78b2451b9,
     type: 3}
-  inventory: {fileID: 11400000, guid: d8cade759c4c57e4f8385db0c8afba50, type: 2}
+  inventory: {fileID: 0}
   itemSlots: []
   CurrentSlot: {fileID: 0}
 --- !u!1 &3961319789952266478
@@ -4874,9 +4874,10 @@ Canvas:
   m_GameObject: {fileID: 3961319789952266478}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 4000573187681812643, guid: fc936b9d677ab7844bfb00a913346300,
+    type: 3}
+  m_PlaneDistance: 0.5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
