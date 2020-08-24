@@ -1,36 +1,38 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class CustomerManager : MonoBehaviour
 {
     [SerializeField] CustomerRequestList defaultList;
     public static List<CustomerRequest> AvailableRequests;
-    [SerializeField] GameObject CustomerPrefab;
-    [SerializeField] GameObject CustomerText;
     [SerializeField] GameObject Canvas;
-
-    int MaxCustomerCount = 3;
-    int CurrentCustomerCount = 0;
-    float CustomerSpawnCooldown = 5;
-    float SpawnTime = 0;
+    [SerializeField] GameObject GridLayoutGO;
+    [SerializeField] GameObject CustomerBoxPrefab;
+    [SerializeField] Image CustomerImage;
+    [SerializeField] Text CustomerName;
+    [SerializeField] Text CustomerDesc;
 
     void Start()
     {
-        AvailableRequests = defaultList.ToList();
+        for (int i = 0; i < defaultList.Count(); i++)
+        {
+            UpdateCanvasQuest(defaultList[i]);
+        }
+    }
+
+    void UpdateCanvasQuest(CustomerRequest newRequest)
+    {
+        Instantiate(CustomerBoxPrefab, Vector3.zero, Quaternion.identity).transform.SetParent(GridLayoutGO.transform);
+        CustomerImage.sprite = newRequest.customerAvatar;
+        CustomerName.text = newRequest.CustomerName;
+        CustomerDesc.text = newRequest.description;
     }
 
     void Update()
     {
-        SpawnTime += Time.deltaTime;
-        if (CurrentCustomerCount < MaxCustomerCount && SpawnTime >= CustomerSpawnCooldown)
-        {
-            CurrentCustomerCount++;
-            Customer newCustomer;
-            newCustomer = Instantiate(CustomerPrefab, Vector3.zero, Quaternion.identity).GetComponent<Customer>();
-            newCustomer.Initialize(this, GetNewRequest(), Canvas, CustomerText);
-            SpawnTime = 0;
-        }
+        
     }
 
     CustomerRequest GetNewRequest()
@@ -43,6 +45,5 @@ public class CustomerManager : MonoBehaviour
     public void DestroyCustomer(Customer customer)
     {
         Destroy(customer);
-        CurrentCustomerCount--;
     }
 }
