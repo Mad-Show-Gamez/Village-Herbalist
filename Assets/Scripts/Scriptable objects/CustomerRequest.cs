@@ -24,7 +24,7 @@ public class CustomerRequest : ScriptableObject
             if (accepted.Any())
             {
                 var responce = accepted.ElementAt(Random.Range(0, accepted.Count() - 1));
-                var defaultProgression = alwaysAddDefaultProgression ? DefaultProgression : new CustomerRequest[0];
+                var defaultProgression = alwaysAddDefaultProgression || !responce.requestsProgression.Any() ? DefaultProgression : new CustomerRequest[0];
                 return new CustomerRequestResult()
                 {
                     unlockedRequests = responce.requestsProgression
