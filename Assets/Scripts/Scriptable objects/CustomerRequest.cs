@@ -31,7 +31,7 @@ public class CustomerRequest : ScriptableObject
                     .Concat(defaultProgression)
                     .ToArray(),
                     isAccepted = true,
-                    Responce = responce.responce
+                    Responce = responce.responce == "" ? defaultResponce : responce.responce
                 };
 
             }
