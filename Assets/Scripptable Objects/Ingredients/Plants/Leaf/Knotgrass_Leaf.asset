@@ -27,5 +27,6 @@ MonoBehaviour:
     stalkless leaves on main stem larger than branch leaves, ochre silvery, torn.
     Fruit: nut, 3-angled, hidden by dead flower.'
   color: {r: 0.33333334, g: 0.6784314, b: 0.43921572, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

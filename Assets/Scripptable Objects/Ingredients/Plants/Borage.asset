@@ -44,5 +44,6 @@ MonoBehaviour:
 
     as a vegetable.'
   color: {r: 0.34109113, g: 0.6886792, b: 0.46635416, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

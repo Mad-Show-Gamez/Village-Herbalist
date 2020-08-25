@@ -33,5 +33,6 @@ MonoBehaviour:
     gout, measles and chronic skin problems, but it is definitely one to leave to
     the professional herbalists"
   color: {r: 0.3529412, g: 0.31764707, b: 0.5254902, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

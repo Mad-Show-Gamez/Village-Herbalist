@@ -22,5 +22,6 @@ MonoBehaviour:
     greyish-green, lanceolate, up to 20 cm: 6-8 root leaves in a rosette, withering
     as flower stem grows. Upper leaves sheathe stem. Fruit: a many-seeded capsule."
   color: {r: 0.57254905, g: 0.5764706, b: 0.4745098, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

@@ -21,5 +21,6 @@ MonoBehaviour:
     time: June-August. Leaf: lanceolate, toothed, opposite, stalkless. Often tinged
     with maroon Fruit: capsule, seeds ridged."
   color: {r: 0.77647066, g: 0.30588236, b: 0.48235297, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

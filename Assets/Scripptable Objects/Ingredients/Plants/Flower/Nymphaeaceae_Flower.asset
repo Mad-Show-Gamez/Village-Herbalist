@@ -23,5 +23,6 @@ MonoBehaviour:
 
     many stamens and no specialized pollination mechanisms.'
   color: {r: 0.92549026, g: 0.909804, b: 0.80392164, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

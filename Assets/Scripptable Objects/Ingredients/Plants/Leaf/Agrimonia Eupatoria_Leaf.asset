@@ -33,5 +33,6 @@ MonoBehaviour:
     grooved; top covered with hooked bristles which point forward, dispersed by catching
     onto clothing, or fur of passing animals.'
   color: {r: 0.23529413, g: 0.45098042, b: 0.09019608, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

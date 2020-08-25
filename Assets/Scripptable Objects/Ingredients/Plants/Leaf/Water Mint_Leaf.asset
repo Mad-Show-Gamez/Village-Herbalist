@@ -32,5 +32,6 @@ MonoBehaviour:
     stomach
     medicine and as a herb for strewing on floors of houses,'
   color: {r: 0.28235295, g: 0.4784314, b: 0.20392159, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

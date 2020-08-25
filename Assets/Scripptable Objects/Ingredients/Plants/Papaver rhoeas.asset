@@ -24,22 +24,23 @@ MonoBehaviour:
 
     Flower arrangement: solitary
 
-    Flowering time: June-August.
-    Leaf: stiffly hairy, 1- to 2-pinnate
+    Flowering time: June-August. Leaf:
+    stiffly hairy, 1- to 2-pinnate
 
     segments coarsely toothed.
 
-    Fruit:
-    capsule, rounded at base, top flat, length 1-2 cm, hairless, opening
+    Fruit: capsule,
+    rounded at base, top flat, length 1-2 cm, hairless, opening
 
-    by
-    pores under top.
+    by pores under
+    top.
 
-    Uses: Poppies were thought to cause headaches and thunderstorms,
-    but
+    Uses: Poppies were thought to cause headaches and thunderstorms, but
 
-    were also used to treat headaches Although slightly poisonous, the
-    red poppy does not contain the opium of the Opium Poppy (P. somniferum)'
+    were
+    also used to treat headaches Although slightly poisonous, the red poppy does
+    not contain the opium of the Opium Poppy (P. somniferum)'
   color: {r: 0.06666667, g: 0.2784314, b: 0.47058824, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

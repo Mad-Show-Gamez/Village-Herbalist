@@ -41,5 +41,6 @@ MonoBehaviour:
     Leaf rosette dies in autumn and plant
     passes winter as a rootless bud just under the ground.'
   color: {r: 0.56078434, g: 0.7254902, b: 0.37647063, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0

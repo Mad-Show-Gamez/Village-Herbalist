@@ -25,5 +25,6 @@ MonoBehaviour:
     oval and flat, with only 1 glume and up to 14 flowers Placed alternately on opposite
     sides of a slender spike, with narrow edge facing the stem'
   color: {r: 0.52156866, g: 0.69803923, b: 0.3529412, a: 1}
-  tags: []
+  tags:
+  - {fileID: 11400000, guid: 6ebaba3adea07ab4fa669adb8061ae02, type: 2}
   value: 0
